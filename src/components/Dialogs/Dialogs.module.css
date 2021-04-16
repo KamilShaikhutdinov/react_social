@@ -1,0 +1,52 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.dialogs__items {
+  padding: 10px;
+  
+}
+a .dialogs__items .active {
+  color: goldenrod;
+  text-decoration: none;
+}
+a.activeLink {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.Messages {
+  padding: 10px;
+}
+.Message {
+    color: rgb(255, 255, 255);
+  
+}
+a{
+    text-decoration: none;
+    color: honeydew;
+}
+.btn {
+  margin-top: 5px;
+  color: #42b983;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  width: fit-content;
+  border-radius: 99px;
+  letter-spacing: 0.05em;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+  font-weight: 700;
+  outline: none;
+  background: #fff;
+  transition: all 0.22s;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
