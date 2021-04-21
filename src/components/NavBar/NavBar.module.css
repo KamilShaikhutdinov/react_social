@@ -18,24 +18,24 @@ a.activeLink {
   text-decoration: none;
 }
 .message::before {
-  content: url("/../pr1/src/images/icon.png");
+  content: url("../../images/icon.png");
   position: relative;
   filter: invert(100%);
 }
 .profile::before {
-  content: url("/../pr1/src/images/profile.png");
+  content: url("../../images/profile.png");
   position: relative;
   font-size: 0.5rem;
   filter: invert(100%);
 }
 .auth::before {
-  content: url("/../pr1/src/images/cog.png");
+  content: url("../../images/cog.png");
   position: relative;
   font-size: 0.5rem;
   filter: invert(100%);
 }
 .main::before {
-  content: url("/../pr1/src/images/react.png");
+  content: url("../../images/react.png");
   position: relative;
   font-size: 0.5rem;
   
