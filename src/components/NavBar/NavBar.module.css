@@ -28,6 +28,19 @@ a.activeLink {
   font-size: 0.5rem;
   filter: invert(100%);
 }
+.auth::before {
+  content: url("/../pr1/src/images/cog.png");
+  position: relative;
+  font-size: 0.5rem;
+  filter: invert(100%);
+}
+.main::before {
+  content: url("/../pr1/src/images/react.png");
+  position: relative;
+  font-size: 0.5rem;
+  
+  
+}
 .item{
   display:flex;
   align-items: center;

@@ -1,6 +1,6 @@
+import profileReducer from "./profileReducer";
 
-const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
+
 
 
 let store = {
@@ -44,21 +44,9 @@ let store = {
   rerender() {},
 
   dispatch(action) {
-    if (action.type === ADD_POST) {
-      // обработчик постов в профайле
-      let newPost = {
-        id: 5,
-        message: this.state.profilePage.newPostText,
-        likesCount: 0,
-      };
-      this.state.profilePage.postData.push(newPost);
-      this.state.profilePage.newPostText = " ";
-      this.rerender(this.state);
-    } else if (action.type === UPDATE_NEW_POST_TEXT) {
-      // обработчик символов Textarea в профайле
-      this.state.profilePage.newPostText = action.newText;
-      this.rerender(this.state);
-    }
+    this.state.profilePage = profileReducer(this.state.profilePage,action)
+    this.rerender(this.state);
+   
   },
 
   // обработчик сообшений в диалогах
@@ -79,17 +67,6 @@ let store = {
   },
 };
 
-export const addPostActionCreator = () => {
-  
-  return {
-    type: ADD_POST,
-  };
-};
-export const updateNewPostTextActionCreator = (text) => {
-  return {
-    type: "UPDATE-NEW-POST-TEXT",
-    newText: text,
-  };
-};
+
 
 export default store;

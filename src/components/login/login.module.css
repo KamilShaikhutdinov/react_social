@@ -1,0 +1,50 @@
+.wrapper {
+    margin-left: 200px;
+  
+}
+
+  .error {
+  color:red;
+  font-weight:bolder;
+  margin-bottom: 20px;
+  
+}
+
+input {
+  margin: 10px 0px;
+  width: 235px;
+  height: 30px;
+  resize: none;
+  border-radius: 15px;
+}
+.btn {
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  color: #42b983;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  width: fit-content;
+  border-radius: 99px;
+  letter-spacing: 0.05em;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+  font-weight: 700;
+  outline: none;
+  background: #fff;
+  transition: all 0.22s;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.Speed {
+  
+  height: 250px;
+  width: auto;
+}

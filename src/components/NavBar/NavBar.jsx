@@ -4,6 +4,11 @@ import Styles from "./NavBar.module.css";
 function NavBar() {
   return (
     <nav className={Styles.nav}>
+      <div className={Styles.item+ ' ' + Styles.main}>
+        <NavLink to="/main" activeClassName={Styles.activeLink}>
+          Главная страница
+        </NavLink>
+      </div>
       <div className={Styles.item+ ' ' + Styles.profile}>
         <NavLink to="/Profile" activeClassName={Styles.activeLink}>
           Профиль
@@ -13,21 +18,19 @@ function NavBar() {
         <NavLink
           className={Styles.a}  
           
-          to="/Dialogs"
+          to="/news"
           activeClassName={Styles.activeLink}
         >
-          Сообщения
+          Новости
         </NavLink>
       </div>
-      <div className={Styles.item}>
-        <a className={Styles.a}>Новости</a>
+      
+      <div className={Styles.item+ ' ' + Styles.auth}>
+        <NavLink to="/login" activeClassName={Styles.activeLink}>
+          Авторизация
+        </NavLink>
       </div>
-      <div className={Styles.item}>
-        <a className={Styles.a}>Музыка</a>
-      </div>
-      <div className={Styles.item}>
-        <a>Настройка</a>
-      </div>
+      
     </nav>
   );
 }

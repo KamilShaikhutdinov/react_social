@@ -1,10 +1,14 @@
 import styles from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import React from "react";
-import {addPostActionCreator} from '../../../Redux/state'
-import {updateNewPostTextActionCreator} from '../../../Redux/state'
+import {addPostActionCreator} from '../../../Redux/profileReducer'
+import {updateNewPostTextActionCreator} from '../../../Redux/profileReducer'
+
 
 function MyPosts(props) {
+  
+    
+  
   let postsElement = props.postData.map((p) => (
     <Post message={p.message} likesCount={p.likesCount} />
   ));
@@ -19,8 +23,10 @@ function MyPosts(props) {
     let text = newPostElement.current.value;
     let action =  updateNewPostTextActionCreator(text);
     props.dispatch(action)
+    
   };
-
+  
+  
   return (
     <div className={styles.block}>
       {" "}
